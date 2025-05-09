@@ -6,6 +6,7 @@
 
 #include <dt-bindings/zmk/behaviors.h>
 #include <behaviors.dtsi>
+#include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 
 #define BASE 0
@@ -76,11 +77,11 @@
             //               |     |      |      |      |        |  |       |      |       |       |      |
 
             bindings = <
-&trans  &kp F1    &kp F2            &kp F3             &kp F4          &kp F5                                       &kp F6        &kp F7        &kp F8        &kp F9    &kp F10       &kp F11
-&trans  &trans    &kp UP_ARROW      &trans             &trans          &trans                                       &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans    &trans        &kp F12
-&trans  &kp LEFT  &kp DOWN_ARROW    &kp RIGHT_ARROW    &trans          &trans                                       &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &trans    &kp UP_ARROW  &trans
-&trans  &trans    &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_BRACE  &kp RIGHT_BRACE  &bootloader    &bootloader  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &trans    &kp DOWN      &kp RIGHT
-                  &trans            &trans             &trans          &trans           &trans         &trans       &kp DEL       &kp NUMBER_0  &trans        &kp LEFT
+&bt BT_CLR_ALL  &kp F1    &kp F2            &kp F3             &kp F4          &kp F5                                       &kp F6        &kp F7        &kp F8        &kp F9    &kp F10       &kp F11
+&trans          &trans    &kp UP_ARROW      &trans             &trans          &trans                                       &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans    &trans        &kp F12
+&trans          &kp LEFT  &kp DOWN_ARROW    &kp RIGHT_ARROW    &trans          &trans                                       &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &trans    &kp UP_ARROW  &trans
+&trans          &trans    &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_BRACE  &kp RIGHT_BRACE  &bootloader    &bootloader  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &trans    &kp DOWN      &kp RIGHT
+                          &trans            &trans             &trans          &trans           &trans         &trans       &kp DEL       &kp NUMBER_0  &trans        &kp LEFT
             >;
 
             sensor-bindings =
